@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kuku Café Haven ☕</title>
 
   <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
+  <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    crossorigin="anonymous"/>
+    crossorigin="anonymous">
+
   <!-- External CSS -->
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ===== HEADER ===== -->
+<!-- ================= NAVBAR ================= -->
 <header>
   <nav class="navbar">
     <div class="logo">
       <a href="#home">Kuku Café Haven<span>.☕</span></a>
     </div>
 
-    <!-- Mobile Menu Icon -->
-    <div class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+    <div class="menu-toggle" id="menuToggle">
       <i class="fas fa-bars"></i>
     </div>
 
@@ -42,7 +41,7 @@
   </nav>
 </header>
 
-<!-- ===== HERO ===== -->
+<!-- ================= HERO ================= -->
 <section class="hero-section" id="home">
   <div class="content">
     <h2>Start Your Day With Fresh Coffee.</h2>
@@ -50,28 +49,27 @@
       “Good days begin with great coffee. Sit back, take a sip,
       and let the world slow down for a moment.”
     </p>
-    <button type="button">Order Now</button>
+    <button id="orderNowBtn">Order Now</button>
   </div>
 </section>
 
-<!-- ===== ABOUT ===== -->
+<!-- ================= ABOUT ================= -->
 <section class="about-section" id="about">
   <h2>About Us</h2>
-
   <p>
     Welcome to <strong>Kuku Café Haven</strong>! We’re a small team with a big
-    love for coffee and community. Every cup is crafted with heart and passion.
+    love for coffee and community.
   </p>
 
   <div class="social-link-list">
-    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-    <a href="https://www.instagram.com/kuvar_charan" aria-label="Instagram">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/kuvar_charan">
       <i class="fa-brands fa-instagram"></i>
     </a>
   </div>
 </section>
 
-<!-- ===== MENU ===== -->
+<!-- ================= MENU ================= -->
 <section id="cafe-menu">
   <div class="menu-container">
     <h1>☕ Cafe Menu</h1>
@@ -83,141 +81,219 @@
       <button onclick="filterMenu('snacks', this)">Snacks</button>
     </div>
 
-    <div class="menu-items" id="menuItems">
+    <div class="menu-items">
 
-      <div class="menu-card coffee">
-        <img src="cappuccino.png" alt="Cappuccino coffee" />
+    <div class="menu-card coffee">
+        <img src="cappuccino.png" alt="Cappuccino coffee">
         <h3>Cappuccino</h3>
         <p>Perfect balance of espresso, steamed milk, and foam.</p>
         <span class="price">₹150</span>
       </div>
 
       <div class="menu-card coffee">
-        <img src="americano.jpg" alt="Americano coffee" />
+        <img src="americano.jpg.jpg"Americano coffee">
         <h3>Americano</h3>
         <p>Smooth espresso diluted with hot water.</p>
         <span class="price">₹150</span>
       </div>
 
       <div class="menu-card coffee">
-        <img src="flat-white.webp" alt="Flat white coffee" />
+        <img src="flat-white.webp" alt="Flat white coffee">
         <h3>Flat White</h3>
         <p>Strong espresso with silky microfoam.</p>
         <span class="price">₹150</span>
       </div>
 
       <div class="menu-card coffee">
-        <img src="latte.jpg" alt="Latte coffee" />
+        <img src="latte.jpg" alt="Latte coffee">
         <h3>Latte</h3>
         <p>Creamy milk with bold espresso.</p>
         <span class="price">₹150</span>
       </div>
 
       <div class="menu-card coffee">
-        <img src="cold-coffee.webp" alt="Cold coffee" />
+        <img src="cold-coffee.webp" alt="Cold coffee">
         <h3>Cold Coffee</h3>
         <p>Chilled coffee with ice cream.</p>
         <span class="price">₹180</span>
       </div>
 
       <div class="menu-card tea">
-        <img src="Masala-tea.png" alt="Masala tea"/> 
+        <img src="Masala-tea.png" alt="Masala tea">
         <h3>Masala Tea</h3>
         <p>Indian spiced milk tea.</p>
         <span class="price">₹80</span>
       </div>
 
       <div class="menu-card snacks">
-        <img src="sandwich.jpg" alt="Cheese sandwich" />
+        <img src="sandwich.jpg" alt="Cheese sandwich">
         <h3>Cheese Sandwich</h3>
         <p>Fresh veggies with toasted bread.</p>
         <span class="price">₹120</span>
       </div>
 
       <div class="menu-card snacks">
-        <img src="fries.jpg" alt="French fries" />
+        <img src="fries.jpg" alt="French fries">
         <h3>French Fries</h3>
         <p>Crispy golden fries.</p>
         <span class="price">₹100</span>
       </div>
 
+      <!----- 
+      <div class="menu-card coffee">
+        <img src="cappuccino.png">
+        <h3>Cappuccino</h3>
+        <span class="price">₹150</span>
+      </div>
+
+      <div class="menu-card coffee">
+        <img src="americano.jpg.jpg">
+        <h3>Americano</h3>
+        <span class="price">₹150</span>
+      </div>
+
+      <div class="menu-card snacks">
+        <img src="fries.jpg">
+        <h3>French Fries</h3>
+        <span class="price">₹100</span>
+      </div>
+
+       <div class="menu-card snacks">
+        <img src="sandwich.jpg">
+        <h3>Sandwich</h3>
+        <span class="price">₹100</span>
+      </div>  --->
+
     </div>
   </div>
 </section>
 
-<!-- ===== CONTACT ===== -->
+<!-- ================= CONTACT ================= -->
 <section id="contact-us" class="contact-section">
   <h2>Contact Us</h2>
 
   <form id="contactForm">
-    <input type="text" id="name" placeholder="Your Name" />
-    <input type="email" id="email" placeholder="Your Email" />
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
     <textarea id="message" placeholder="Your Message"></textarea>
     <button type="submit">Send Message</button>
   </form>
 
-  <div class="contact-info">
-    <p>📍 Jamnagar, Gujarat</p>
-    <p>📧 kuvarcharan10@gmail.com</p>
-    <p>☎️ +91 8511877623</p>
-  </div>
-
   <p id="statusMessage"></p>
 </section>
 
-<!-- ===== FOOTER ===== -->
 <footer>
   <p>© 2025 Kuku Café Haven</p>
 </footer>
 
-<!-- ===== JAVASCRIPT ===== -->
+<!-- ================= ORDER MODAL ================= -->
+<div class="order-modal" id="orderModal">
+  <div class="order-box">
+    <span class="close-btn" id="closeOrder">&times;</span>
+
+    <h2>Place Your Order</h2>
+
+    <!-- Item selection -->
+    <select id="orderItem">
+      <option value="">Select Item</option>
+      <option value="Cappuccino">Cappuccino</option>
+      <option value="Americano">Americano</option>
+      <option value="Latte">Latte</option>
+      <option value="Cold Coffee">Cold Coffee</option>
+      <option value="Masala Tea">Masala Tea</option>
+      <option value="French Fries">French Fries</option>
+      <option value="sandwich">Sandwich</option>
+    </select>
+
+    <input type="number" id="orderQty" min="1" placeholder="Quantity">
+
+    <button id="addItemBtn">➕ Add Item</button> <br>
+
+    <!-- Order list -->
+    <ul id="orderList"></ul>
+
+    <button id="placeOrder">Place Order</button>
+
+    <p id="orderStatus"></p>
+  </div>
+</div>
+
+<!-- ================= JAVASCRIPT ================= -->
 <script>
-/* Menu Filter */
+
+/* ================= MOBILE MENU ================= */
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+menuToggle.onclick = () => navLinks.classList.toggle("show");
+
+/* ================= MENU FILTER ================= */
 function filterMenu(category, btn) {
   document.querySelectorAll(".category-buttons button")
     .forEach(b => b.classList.remove("active"));
   btn.classList.add("active");
 
-  document.querySelectorAll(".menu-card").forEach(item => {
-    item.style.display =
-      category === "all" || item.classList.contains(category)
+  document.querySelectorAll(".menu-card").forEach(card => {
+    card.style.display =
+      category === "all" || card.classList.contains(category)
         ? "block"
         : "none";
   });
 }
 
-/* Contact Form */
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+/* ================= ORDER MODAL ================= */
+const orderNowBtn = document.getElementById("orderNowBtn");
+const orderModal = document.getElementById("orderModal");
+const closeOrder = document.getElementById("closeOrder");
+const addItemBtn = document.getElementById("addItemBtn");
+const placeOrderBtn = document.getElementById("placeOrder");
+const orderList = document.getElementById("orderList");
+const orderStatus = document.getElementById("orderStatus");
 
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const message = document.getElementById("message").value.trim();
-  const status = document.getElementById("statusMessage");
+let cart = [];
 
-  if (!name || !email || !message) {
-    status.textContent = "⚠️ Please fill all fields";
-    status.style.color = "red";
+/* Open / Close modal */
+orderNowBtn.onclick = () => orderModal.style.display = "flex";
+
+closeOrder.onclick = () => {
+  orderModal.style.display = "none";
+  cart = [];
+  orderList.innerHTML = "";
+  orderStatus.textContent = "";
+};
+
+/* Add item to cart */
+addItemBtn.onclick = () => {
+  const item = document.getElementById("orderItem").value;
+  const qty = document.getElementById("orderQty").value;
+
+  if (!item || !qty) {
+    orderStatus.textContent = "⚠️ Select item & quantity";
+    orderStatus.style.color = "red";
     return;
   }
 
-  status.textContent = "✅ Message sent successfully!";
-  status.style.color = "white";
-});
+  cart.push({ item, qty });
 
-/* Mobile Navbar */
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
+  const li = document.createElement("li");
+  li.textContent = `${item} × ${qty}`;
+  orderList.appendChild(li);
 
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
-});
+  document.getElementById("orderItem").value = "";
+  document.getElementById("orderQty").value = "";
+  orderStatus.textContent = "";
+};
 
-document.querySelectorAll("#navLinks a").forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("show");
-  });
-});
+/* Place order */
+placeOrderBtn.onclick = () => {
+  if (cart.length === 0) {
+    orderStatus.textContent = "⚠️ Add at least one item";
+    orderStatus.style.color = "red";
+    return;
+  }
+
+  orderStatus.textContent = "✅ Order placed successfully!";
+  orderStatus.style.color = "lightgreen";
+};
 </script>
 
 </body>
