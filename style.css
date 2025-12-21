@@ -15,6 +15,10 @@ body {
 }
 
 /* ================= NAVBAR ================= */
+section {
+  scroll-margin-top: 90px; /* height of navbar */
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -115,6 +119,7 @@ body {
 }
 
 /** ABOUT Us Section **/
+
 .about-section {
   padding: 90px 20px;
   background: linear-gradient(180deg, #2a160c, #3b2314);
@@ -124,7 +129,7 @@ body {
 .about-section h2 {
   font-size: 34px;
   margin-bottom: 25px;
-  color: #ffb26b;
+  color: white;
 }
 
 .about-section p {
@@ -289,4 +294,67 @@ footer {
 .logo-link:hover img {
   transform: scale(1.12);
   filter: drop-shadow(0 0 20px rgba(255, 140, 50, 1));
+}
+
+
+/* ================= MOBILE NAVBAR ================= */
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: #ffb26b;
+  cursor: pointer;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 20px 25px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-menu-links {
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: rgba(20, 10, 5, 0.95);
+    backdrop-filter: blur(8px);
+    display: none;
+    padding: 20px 0;
+  }
+
+  .navbar-menu-links.show {
+    display: flex;
+  }
+
+  .navbar-menu-links li {
+    padding: 15px 0;
+  }
+
+  .hero-section {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .hero-section h2 {
+    font-size: 30px;
+  }
+
+  .hero-section p {
+    font-size: 14px;
+  }
+
+  .menu-container {
+    padding: 70px 20px;
+  }
+
+  .menu-items {
+    grid-template-columns: 1fr;
+  }
 }
